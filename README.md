@@ -1,6 +1,6 @@
 # yum-repo
 
-Builds repo data with createrepo and servers it via python's SimpleHTTPServer. The repo artifacts will persist.
+Builds repo data with createrepo and serves it via python's SimpleHTTPServer. The repo artifacts will persist.
 
 ## Usage
 
