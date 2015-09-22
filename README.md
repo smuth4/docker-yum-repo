@@ -1,14 +1,17 @@
 # yum-repo
 
-Builds repo data with createrepo and servers it via python's SimpleHTTPServer.
+Builds repo data with createrepo and servers it via python's SimpleHTTPServer. The repo artifacts will persist.
 
 ## Usage
 
-```git clone https://github.com/smuth4/docker-yum-repo.git
+```
+git clone https://github.com/smuth4/docker-yum-repo.git
 cd docker-yum-repo
-docker build -t yum-repo .```
+docker build -t yum-repo .
+```
 
-This will server everything in `/repo/`
+This will serve everything in `/repo/` on 8080 on the host:
+
 `docker run -v /packages/:/repo -p 8080:8000 yumrepo`
 
 Or if you have a structure like
@@ -21,4 +24,5 @@ packages
    `<packages...>
 ```  
 
+This will create a repo in each specified directory (relative to `/repo/`)
 `docker run -v /packages/:/repo -p 8080:8000 yumrepo cent6/x86_64/ cent6/i386/`
