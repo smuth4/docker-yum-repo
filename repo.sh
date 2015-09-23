@@ -1,6 +1,5 @@
 #!/bin/bash
 # Build and serve a repo
-mkdir -p /var/www
 if [[ -z "$@" ]]; then
   createrepo /repo/
   chmod -R a+rw /repo/repodata/
@@ -13,4 +12,5 @@ else
   done
 fi
 
+cd /repo
 python2 -m SimpleHTTPServer
