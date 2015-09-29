@@ -25,4 +25,5 @@ packages
 ```  
 
 This will create a repo in each specified directory (relative to `/repo/`)
+
 `docker run -v /packages/:/repo -p 8080:8000 yumrepo cent6/x86_64/ cent6/i386/`
