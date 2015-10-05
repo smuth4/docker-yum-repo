@@ -2,6 +2,8 @@
 
 Builds repo data with createrepo and serves it via python's SimpleHTTPServer. The repo artifacts will persist.
 
+[![Docker Repository on Quay.io](https://quay.io/repository/smuth4/yum-repo/status "Docker Repository on Quay.io")](https://quay.io/repository/smuth4/yum-repo)
+
 ## Usage
 
 ```
