@@ -1,6 +1,6 @@
 # yum-repo
 
-test-text
+test-text more taxt
 
 Builds repo data with createrepo and serves it via python's SimpleHTTPServer. The repo artifacts will persist.
 
